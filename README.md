@@ -31,10 +31,62 @@ roslaunch scount_minimal.launch
 sudo chmod 666/dev/ttyUSB1
 ```
 # Environment
-<h3 align="center">Classroom scenario</h3>
+Three experimental scenarios were selected: two indoor environments (classroom and parking lot) and one outdoor environment (helipad). All experiments were conducted at the National Elite Institute of Engineering, Chongqing University.
+<!-- <h3 align="center">Classroom scenario</h3>
 
-| Schematic diagram | Real picture | Real picture |
+| Classroom | Parking lot | Helipad |
 |:-----------------:|:-------------:|:-------------:|
-| <img src="https://github.com/CQU-UISC/NearLink-RSSI-Fingerprinting-Dataset/blob/main/IMG/scenario_classroom.png" width="200"> | <img src="https://github.com/CQU-UISC/NearLink-RSSI-Fingerprinting-Dataset/blob/main/IMG/scenario_parking_lot.png" height="235"> | <img src="https://github.com/CQU-UISC/NearLink-RSSI-Fingerprinting-Dataset/blob/main/IMG/scenario_helipad.png" height="235"> |
-| <img src="https://github.com/CQU-UISC/NearLink-RSSI-Fingerprinting-Dataset/blob/main/IMG/real_classroom.jpg" width="200"> | <img src="https://github.com/CQU-UISC/NearLink-RSSI-Fingerprinting-Dataset/blob/main/IMG/real_parking_lot.png" height="265"> | <img src="https://github.com/CQU-UISC/NearLink-RSSI-Fingerprinting-Dataset/blob/main/IMG/real_helipad.png" height="265"> |
+| Schematic diagram | Schematic diagram | Schematic diagram |
+| <img src="https://github.com/CQU-UISC/NearLink-RSSI-Fingerprinting-Dataset/blob/main/IMG/scenario_classroom.png" width="255"> | <img src="https://github.com/CQU-UISC/NearLink-RSSI-Fingerprinting-Dataset/blob/main/IMG/scenario_parking_lot.png" height="300"> | <img src="https://github.com/CQU-UISC/NearLink-RSSI-Fingerprinting-Dataset/blob/main/IMG/scenario_helipad.png" height="300"> |
+| <img src="https://github.com/CQU-UISC/NearLink-RSSI-Fingerprinting-Dataset/blob/main/IMG/real_classroom.jpg" width="255"> | <img src="https://github.com/CQU-UISC/NearLink-RSSI-Fingerprinting-Dataset/blob/main/IMG/real_parking_lot.png" height="340"> | <img src="https://github.com/CQU-UISC/NearLink-RSSI-Fingerprinting-Dataset/blob/main/IMG/real_helipad.png" height="340"> | -->
+The classroom has an area of approximately 60 m² (8.2 × 7.2 m). 4 transmitters were installed at the corners of the classroom, forming a square with a side length of 5 m. The central area enclosed by the transmitters, measuring 4.5 × 4.5 m, was defined as the target area for fingerprint database construction. Within this region, 81 reference points were arranged at 0.5 m intervals. Each reference point was marked with a 5 cm × 5 cm blue square sticker to indicate the ground-truth coordinates. The ground-truth positions were measured using a laser rangefinder (SNDWAY SW-120GS, ±2 mm accuracy). 16 points were randomly selected as test points (marked with pink stickers). 
+
+The parking lot covers an area of approximately 1200 m² (30 × 40 m). 8 transmitters were installed around the central area, forming a rectangle measuring 28.5 × 22.5 m. The central target area for fingerprint database construction measured 27 × 21 m. A total of 252 reference points were arranged at 1.5 m intervals, marked with blue stickers, and 50 test points were randomly selected and marked with pink stickers. 
+
+The helipad covers an area of approximately 1600 m² (40 × 40 m). 8 transmitters were installed around the central area, forming a square with a side length of 16 m. The central target region area 15 × 15 m. Within this region, 225 reference points were arranged at 1 m intervals and marked with blue stickers, while 45 test points were randomly selected and marked with pink stickers. 
+
+In this work, we adopted the open-source [H-IPS](https://github.com/6trem/H-IPS) algorithm for range based Multilateration. For the fingerprinting method, we adopted one machine learning algorithm ([KNN](https://github.com/SensorOrgNet/A_Soft_Range_Limited_K_Nearest_Neighbors_Algorithm_for_Indoor_Localization_Enhancement)) and four deep learning algorithms (MLP, [LSTM-RNN](https://github.com/SensorOrgNet/Recurrent_Neural_Networks_for_Accurate_RSSI_Indoor_Localization), [HADNN](https://codeocean.com/capsule/6488957/tree/v1) and [GconvLoc](https://github.com/dongdokee/GConvLoc).
+
+<table>
+  <tr>
+    <th>Classroom</th>
+    <th>Parking lot</th>
+    <th>Helipad</th>
+  </tr>
+
+  <!-- 示意图图片行 -->
+  <tr>
+    <td><img src="https://github.com/CQU-UISC/NearLink-RSSI-Fingerprinting-Dataset/blob/main/IMG/scenario_classroom.png" width="255"></td>
+    <td><img src="https://github.com/CQU-UISC/NearLink-RSSI-Fingerprinting-Dataset/blob/main/IMG/scenario_parking_lot.png" height="300"></td>
+    <td><img src="https://github.com/CQU-UISC/NearLink-RSSI-Fingerprinting-Dataset/blob/main/IMG/scenario_helipad.png" height="300"></td>
+  </tr>
+  <!-- 示意图标题行 -->
+  <!-- <tr>
+    <td colspan="3" align="center"><b>Schematic diagram</b></td>
+  </tr> -->
+
+
+  <!-- 实际场景图片行 -->
+  <tr>
+    <td><img src="https://github.com/CQU-UISC/NearLink-RSSI-Fingerprinting-Dataset/blob/main/IMG/real_classroom.jpg" width="255"></td>
+    <td><img src="https://github.com/CQU-UISC/NearLink-RSSI-Fingerprinting-Dataset/blob/main/IMG/real_parking_lot.png" height="340"></td>
+    <td><img src="https://github.com/CQU-UISC/NearLink-RSSI-Fingerprinting-Dataset/blob/main/IMG/real_helipad.png" height="340"></td>
+  </tr>
+  <!-- 实际场景标题行 -->
+  <!-- <tr>
+    <td colspan="3" align="center"><b>Real scenario</b></td>
+  </tr> -->
+</table>
+<h3 align="center">Schematic diagram and real scenario in 3 scenarios</h3>
+
+
+
+
+This work leverages the following projects:
+- https://github.com/6trem/H-IPS
+- https://github.com/SensorOrgNet/A_Soft_Range_Limited_K_Nearest_Neighbors_Algorithm_for_Indoor_Localization_Enhancement
+- https://github.com/SensorOrgNet/Recurrent_Neural_Networks_for_Accurate_RSSI_Indoor_Localization
+- https://codeocean.com/capsule/6488957/tree/v1
+- https://github.com/dongdokee/GConvLoc
+
 
