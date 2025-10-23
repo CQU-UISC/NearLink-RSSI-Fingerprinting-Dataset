@@ -39,11 +39,11 @@ Three experimental scenarios were selected: two indoor environments (classroom a
 | Schematic diagram | Schematic diagram | Schematic diagram |
 | <img src="https://github.com/CQU-UISC/NearLink-RSSI-Fingerprinting-Dataset/blob/main/IMG/scenario_classroom.png" width="255"> | <img src="https://github.com/CQU-UISC/NearLink-RSSI-Fingerprinting-Dataset/blob/main/IMG/scenario_parking_lot.png" height="300"> | <img src="https://github.com/CQU-UISC/NearLink-RSSI-Fingerprinting-Dataset/blob/main/IMG/scenario_helipad.png" height="300"> |
 | <img src="https://github.com/CQU-UISC/NearLink-RSSI-Fingerprinting-Dataset/blob/main/IMG/real_classroom.jpg" width="255"> | <img src="https://github.com/CQU-UISC/NearLink-RSSI-Fingerprinting-Dataset/blob/main/IMG/real_parking_lot.png" height="340"> | <img src="https://github.com/CQU-UISC/NearLink-RSSI-Fingerprinting-Dataset/blob/main/IMG/real_helipad.png" height="340"> | -->
-The classroom has an area of approximately 60 m² (8.2 × 7.2 m). 4 transmitters were installed at the corners of the classroom, forming a square with a side length of 5 m. The central area enclosed by the transmitters, measuring 4.5 × 4.5 m, was defined as the target area for fingerprint database construction. Within this region, 81 reference points were arranged at 0.5 m intervals. Each reference point was marked with a 5 cm × 5 cm blue square sticker to indicate the ground-truth coordinates. The ground-truth positions were measured using a laser rangefinder (SNDWAY SW-120GS, ±2 mm accuracy). 16 points were randomly selected as test points (marked with pink stickers). 
+- The classroom has an area of approximately 60 m² (8.2 × 7.2 m). 4 transmitters were installed at the corners of the classroom, forming a square with a side length of 5 m. The central area enclosed by the transmitters, measuring 4.5 × 4.5 m, was defined as the target area for fingerprint database construction. Within this region, 81 reference points were arranged at 0.5 m intervals. Each reference point was marked with a 5 cm × 5 cm blue square sticker to indicate the ground-truth coordinates. The ground-truth positions were measured using a laser rangefinder (SNDWAY SW-120GS, ±2 mm accuracy). 16 points were randomly selected as test points (marked with pink stickers). 
 
-The parking lot covers an area of approximately 1200 m² (30 × 40 m). 8 transmitters were installed around the central area, forming a rectangle measuring 28.5 × 22.5 m. The central target area for fingerprint database construction measured 27 × 21 m. A total of 252 reference points were arranged at 1.5 m intervals, marked with blue stickers, and 50 test points were randomly selected and marked with pink stickers. 
+- The parking lot covers an area of approximately 1200 m² (30 × 40 m). 8 transmitters were installed around the central area, forming a rectangle measuring 28.5 × 22.5 m. The central target area for fingerprint database construction measured 27 × 21 m. A total of 252 reference points were arranged at 1.5 m intervals, marked with blue stickers, and 50 test points were randomly selected and marked with pink stickers. 
 
-The helipad covers an area of approximately 1600 m² (40 × 40 m). 8 transmitters were installed around the central area, forming a square with a side length of 16 m. The central target region area 15 × 15 m. Within this region, 225 reference points were arranged at 1 m intervals and marked with blue stickers, while 45 test points were randomly selected and marked with pink stickers. 
+- The helipad covers an area of approximately 1600 m² (40 × 40 m). 8 transmitters were installed around the central area, forming a square with a side length of 16 m. The central target region area 15 × 15 m. Within this region, 225 reference points were arranged at 1 m intervals and marked with blue stickers, while 45 test points were randomly selected and marked with pink stickers. 
 
 In this work, we adopted the open-source [H-IPS](https://github.com/6trem/H-IPS) algorithm for range based Multilateration. For the fingerprinting method, we adopted one machine learning algorithm ([KNN](https://github.com/SensorOrgNet/A_Soft_Range_Limited_K_Nearest_Neighbors_Algorithm_for_Indoor_Localization_Enhancement)) and four deep learning algorithms (MLP, [LSTM-RNN](https://github.com/SensorOrgNet/Recurrent_Neural_Networks_for_Accurate_RSSI_Indoor_Localization), [HADNN](https://codeocean.com/capsule/6488957/tree/v1) and [GconvLoc](https://github.com/dongdokee/GConvLoc).
 
@@ -79,14 +79,17 @@ In this work, we adopted the open-source [H-IPS](https://github.com/6trem/H-IPS)
 </table>
 <h3 align="center">Schematic diagram and real scenario in 3 scenarios</h3>
 
+# Related Paper
+S. Xie, X. Long, F. Guo, Y. Guo and F. Gu, "Comparison of RSSI-Based Indoor/Outdoor Localization Using NearLink Technology," IEEE Transactions on Mobile Computing. To be published.
 
 
-
-This work leverages the following projects:
-- https://github.com/6trem/H-IPS
-- https://github.com/SensorOrgNet/A_Soft_Range_Limited_K_Nearest_Neighbors_Algorithm_for_Indoor_Localization_Enhancement
-- https://github.com/SensorOrgNet/Recurrent_Neural_Networks_for_Accurate_RSSI_Indoor_Localization
-- https://codeocean.com/capsule/6488957/tree/v1
-- https://github.com/dongdokee/GConvLoc
+# Acknowledgments
+This project leverages the following works:
+- A. C. Eyng, O. K. Rayel, E. Oroski, and J. L. Rebelatto, “Kalman filtering-aided hybrid indoor positioning system with fingerprinting and multilateration,” in 2020 IEEE 91st vehicular technology conference (VTC2020-Spring). IEEE, 2020, pp. 1–5. Project: [H-IPS](https://github.com/6trem/H-IPS)
+- M. T. Hoang, Y. Zhu, B. Yuen, T. Reese, X. Dong, T. Lu, R. Westendorp, and M. Xie, “A soft range limited k-nearest neighbors algorithm for indoor localization enhancement,” IEEE Sensors Journal, vol. 18, no. 24, pp. 10 208–10 216, 2018. Project: [KNN](https://github.com/SensorOrgNet/A_Soft_Range_Limited_K_Nearest_Neighbors_Algorithm_for_Indoor_Localization_Enhancement)
+- Y. Etiabi, W. Njima, and E. M. Amhoud, “Federated learning based hierarchical 3d indoor localization,” in 2023 IEEE Wireless Communications and Networking Conference (WCNC). IEEE, 2023, pp. 1–6.
+- M. T. Hoang, B. Yuen, X. Dong, T. Lu, R. Westendorp, and K. Reddy, “Recurrent neural networks for accurate rssi indoor localization,” IEEE Internet of Things Journal, vol. 6, no. 6, pp. 10 639–10 651, 2019. Project: [LSTM-RNN](https://github.com/SensorOrgNet/Recurrent_Neural_Networks_for_Accurate_RSSI_Indoor_Localization)
+- J. Cha and E. Lim, “A hierarchical auxiliary deep neural network architecture for large-scale indoor localization based on wi-fi fingerprinting,” Applied Soft Computing, vol. 120, p. 108624, 2022. Project: [HADNN](https://codeocean.com/capsule/6488957/tree/v1)
+- D. Kim and Y.-J. Suh, “Gconvloc: Wifi fingerprinting-based indoor localization using graph convolutional networks,” IEICE TRANSACTIONS on Information and Systems, vol. 106, no. 4, pp. 570–574, 2023. Project: [GconvLoc](https://github.com/dongdokee/GConvLoc)
 
 
