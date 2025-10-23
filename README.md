@@ -11,6 +11,11 @@ In addition, we also combBefore running the script, you need to execute the foll
 - Wi-Fi+NearLink, 
 - BLE+NearLink,
 - Wi-Fi+BLE+NearLink.
+
+The NearLink_BLE_Wi-Fi_dataset contains 3 folders of experimental scenarios. Each experimental scene folder contains 7 folders, representing Wi-Fi, BLE, NearLink and their combinations respectively.
+
+Under the folder of each technology, there are csv files of the training set and the test set respectively. The x and y colums in the csv file represent the real coordinates, while the other columns are the RSSI values of different transmitters collected at the real coordinates. The RSSI values are the average values after Kalman filtering, and the number of rows is the number of fingerprint points.
+
 # Hardware
 In the experiment, the equipment used includes BearPi Pico H3863 for reading RSSI data and an autonomous robot for automated data collection.
 
@@ -42,6 +47,8 @@ Data collection demo is shown below:
 https://github.com/user-attachments/assets/9a1f82e3-a05c-4efb-8d26-6d3e1ed59ab3
 
 
+# Method
+In this work, we adopted the open-source [H-IPS](https://github.com/6trem/H-IPS) algorithm for range based Multilateration. For the fingerprinting method, we adopted one machine learning algorithm ([KNN](https://github.com/SensorOrgNet/A_Soft_Range_Limited_K_Nearest_Neighbors_Algorithm_for_Indoor_Localization_Enhancement)) and four deep learning algorithms (MLP, [LSTM-RNN](https://github.com/SensorOrgNet/Recurrent_Neural_Networks_for_Accurate_RSSI_Indoor_Localization), [HADNN](https://codeocean.com/capsule/6488957/tree/v1) and [GconvLoc](https://github.com/dongdokee/GConvLoc). The code for all methods can be found in the algorithms folder.
 
 
 
@@ -59,8 +66,6 @@ Three experimental scenarios were selected: two indoor environments (classroom a
 - The parking lot covers an area of approximately 1200 m² (30 × 40 m). 8 transmitters were installed around the central area, forming a rectangle measuring 28.5 × 22.5 m. The central target area for fingerprint database construction measured 27 × 21 m. A total of 252 reference points were arranged at 1.5 m intervals, marked with blue stickers, and 50 test points were randomly selected and marked with pink stickers. 
 
 - The helipad covers an area of approximately 1600 m² (40 × 40 m). 8 transmitters were installed around the central area, forming a square with a side length of 16 m. The central target region area 15 × 15 m. Within this region, 225 reference points were arranged at 1 m intervals and marked with blue stickers, while 45 test points were randomly selected and marked with pink stickers. 
-
-In this work, we adopted the open-source [H-IPS](https://github.com/6trem/H-IPS) algorithm for range based Multilateration. For the fingerprinting method, we adopted one machine learning algorithm ([KNN](https://github.com/SensorOrgNet/A_Soft_Range_Limited_K_Nearest_Neighbors_Algorithm_for_Indoor_Localization_Enhancement)) and four deep learning algorithms (MLP, [LSTM-RNN](https://github.com/SensorOrgNet/Recurrent_Neural_Networks_for_Accurate_RSSI_Indoor_Localization), [HADNN](https://codeocean.com/capsule/6488957/tree/v1) and [GconvLoc](https://github.com/dongdokee/GConvLoc).
 
 <table>
   <tr>
@@ -95,7 +100,7 @@ In this work, we adopted the open-source [H-IPS](https://github.com/6trem/H-IPS)
 <h3 align="center">Schematic diagram and real scenario in 3 scenarios</h3>
 
 # Related Paper
-S. Xie, X. Long, F. Guo, Y. Guo and F. Gu, "Comparison of RSSI-Based Indoor/Outdoor Localization Using NearLink Technology," IEEE Transactions on Mobile Computing. To be published.
+S. Xie, X. Long, F. Guo, Y. Guo and F. Gu, "Comparison of RSSI-Based Indoor/Outdoor Localization Using NearLink Technology," Satellite Navigation. To be published.
 
 
 # Acknowledgments
