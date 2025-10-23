@@ -1,0 +1,31 @@
+WIFI_BLE Error Metrics:
+Average Euclidean Distance Error (meters): 4.2639
+MSE (meters²): 28.3778
+RMSE (meters): 5.3271
+Variance (meters²): 10.1969
+STD (meters): 3.1933
+Algorithm Runtime (seconds): 0.0740
+
+WIFI_SLE Error Metrics:
+Average Euclidean Distance Error (meters): 4.2556
+MSE (meters²): 28.3298
+RMSE (meters): 5.3226
+Variance (meters²): 10.2199
+STD (meters): 3.1969
+Algorithm Runtime (seconds): 0.0820
+
+BLE_SLE Error Metrics:
+Average Euclidean Distance Error (meters): 3.7168
+MSE (meters²): 19.2226
+RMSE (meters): 4.3844
+Variance (meters²): 5.4082
+STD (meters): 2.3256
+Algorithm Runtime (seconds): 0.0784
+
+WIFI_SLE_BLE Error Metrics:
+Average Euclidean Distance Error (meters): 4.0725
+MSE (meters²): 25.7163
+RMSE (meters): 5.0711
+Variance (meters²): 9.1312
+STD (meters): 3.0218
+Algorithm Runtime (seconds): 0.0920

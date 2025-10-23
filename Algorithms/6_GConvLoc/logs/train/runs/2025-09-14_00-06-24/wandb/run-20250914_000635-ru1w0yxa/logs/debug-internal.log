@@ -1,0 +1,13 @@
+{"time":"2025-09-14T00:06:35.3725655+08:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-09-14T00:06:37.284809+08:00","level":"INFO","msg":"stream: created new stream","id":"ru1w0yxa"}
+{"time":"2025-09-14T00:06:37.284809+08:00","level":"INFO","msg":"stream: started","id":"ru1w0yxa"}
+{"time":"2025-09-14T00:06:37.284809+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"ru1w0yxa"}
+{"time":"2025-09-14T00:06:37.284809+08:00","level":"INFO","msg":"sender: started","stream_id":"ru1w0yxa"}
+{"time":"2025-09-14T00:06:37.2853126+08:00","level":"INFO","msg":"handler: started","stream_id":"ru1w0yxa"}
+{"time":"2025-09-14T00:06:42.841774+08:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.6249033,"progress":"10.2KB/10.2KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.6249033,"progress":"907B/907B"}],"total_operations":2}}
+{"time":"2025-09-14T00:06:43.8758968+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-14T00:06:54.3475681+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/1225278661-chongqing-university/gconvloc/ru1w0yxa/file_stream\": unexpected EOF"}
+{"time":"2025-09-14T00:07:43.0700616+08:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 0-92, summary, console lines 1-97","runtime_seconds":59.1941648,"error_status":"retrying: Post \"https://api.wandb.ai/files/1225278661-chongqing-university/gconvloc/ru1w0yxa/file_stream\": unexpected EOF"}],"total_operations":1}}
+{"time":"2025-09-14T00:08:43.3403814+08:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 0-92, summary, console lines 1-97","runtime_seconds":119.4644846,"error_status":"retrying: Post \"https://api.wandb.ai/files/1225278661-chongqing-university/gconvloc/ru1w0yxa/file_stream\": unexpected EOF"}],"total_operations":1}}
+{"time":"2025-09-14T00:09:56.3673112+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/1225278661-chongqing-university/gconvloc/ru1w0yxa/file_stream\": context deadline exceeded"}
+{"time":"2025-09-14T00:10:20.6934746+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/1225278661-chongqing-university/gconvloc/ru1w0yxa/file_stream\": unexpected EOF"}

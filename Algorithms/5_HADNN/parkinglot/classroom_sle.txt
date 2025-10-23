@@ -1,0 +1,10 @@
+#############################################################
+HADNN1 results on CustomIndoor
+mse on the test set: 3.3160
+mse2 on the test set: 13.8002
+rmse on the test set: 3.7149
+mae on the test set: 4.2183
+variance on the test set: 2.8043
+std on the test set: 1.6746
+#############################################################
+Algorithm runtime: 5048.34 milliseconds

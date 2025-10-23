@@ -1,0 +1,9 @@
+{"time":"2025-09-14T00:06:35.1785695+08:00","level":"INFO","msg":"main: starting server","port-filename":"C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\tmplcal5nv8\\port-14000.txt","pid":14000,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2025-09-14T00:06:35.1839027+08:00","level":"INFO","msg":"server: will exit if parent process dies","ppid":14000}
+{"time":"2025-09-14T00:06:35.1839027+08:00","level":"INFO","msg":"server: accepting connections","addr":{"IP":"127.0.0.1","Port":63785,"Zone":""}}
+{"time":"2025-09-14T00:06:35.1839027+08:00","level":"INFO","msg":"server: accepting connections","addr":{"Name":"C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\wandb-14000-25828-2531889899\\socket","Net":"unix"}}
+{"time":"2025-09-14T00:06:35.3596563+08:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"1(127.0.0.1:63786)"}
+{"time":"2025-09-14T00:06:35.3714396+08:00","level":"INFO","msg":"handleInformInit: received","streamId":"ru1w0yxa","id":"1(127.0.0.1:63786)"}
+{"time":"2025-09-14T00:06:37.284809+08:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"ru1w0yxa","id":"1(127.0.0.1:63786)"}
+{"time":"2025-09-14T00:09:13.6396179+08:00","level":"ERROR","msg":"connection: fatal error reading connection","error":"read tcp 127.0.0.1:63785->127.0.0.1:63786: wsarecv: An existing connection was forcibly closed by the remote host.","id":"1(127.0.0.1:63786)"}
+{"time":"2025-09-14T00:10:44.2648515+08:00","level":"WARN","msg":"connection: Respond: attempt to send response on closed connection","id":"1(127.0.0.1:63786)"}

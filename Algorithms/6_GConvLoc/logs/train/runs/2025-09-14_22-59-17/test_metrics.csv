@@ -1,0 +1,2 @@
+test/loss,test/mean_error,test/mean_mse,test/mean_rmse,test/mean_variance,test/mean_std
+1.1207,1.3209,2.2414,1.4971,0.4967,0.7048

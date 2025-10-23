@@ -1,0 +1,38 @@
+{
+  "os": "Windows-10-10.0.19044-SP0",
+  "python": "CPython 3.8.20",
+  "startedAt": "2025-09-14T15:33:11.036450Z",
+  "args": [
+    "experiment=gconvloc_sle"
+  ],
+  "program": "src/train.py",
+  "codePath": "src\\train.py",
+  "codePathLocal": "src\\train.py",
+  "root": "C:\\Users\\Administrator\\Desktop\\1PAPER\\6_GCOM\\logs\\train\\runs\\2025-09-14_23-33-00",
+  "host": "C206-10",
+  "executable": "C:\\ProgramData\\anaconda3\\envs\\gconvloc\\python.exe",
+  "cpu_count": 12,
+  "cpu_count_logical": 20,
+  "gpu": "NVIDIA GeForce RTX 3060",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "321377140736",
+      "used": "257525293056"
+    }
+  },
+  "memory": {
+    "total": "34060894208"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 3060",
+      "memoryTotal": "12884901888",
+      "cudaCores": 3584,
+      "architecture": "Ampere",
+      "uuid": "GPU-cea553a3-152f-922a-a37c-79674aff8723"
+    }
+  ],
+  "cudaVersion": "11.7",
+  "writerId": "qn4jse6i897ewdbv25pn4bg7c7l8j49v"
+}

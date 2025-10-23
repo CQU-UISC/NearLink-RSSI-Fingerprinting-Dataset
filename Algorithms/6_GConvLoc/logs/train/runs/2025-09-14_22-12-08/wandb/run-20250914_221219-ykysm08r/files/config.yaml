@@ -1,0 +1,232 @@
+_wandb:
+    value:
+        cli_version: 0.21.0
+        e:
+            clmtostw4h2m1fhdqf4hhduzrnc0sh56:
+                args:
+                    - experiment=gconvloc_sle
+                codePath: src\train.py
+                codePathLocal: src\train.py
+                cpu_count: 12
+                cpu_count_logical: 20
+                cudaVersion: "11.7"
+                disk:
+                    /:
+                        total: "321377140736"
+                        used: "257983270912"
+                executable: C:\ProgramData\anaconda3\envs\gconvloc\python.exe
+                gpu: NVIDIA GeForce RTX 3060
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 3584
+                      memoryTotal: "12884901888"
+                      name: NVIDIA GeForce RTX 3060
+                      uuid: GPU-cea553a3-152f-922a-a37c-79674aff8723
+                host: C206-10
+                memory:
+                    total: "34060894208"
+                os: Windows-10-10.0.19044-SP0
+                program: src/train.py
+                python: CPython 3.8.20
+                root: C:\Users\Administrator\Desktop\1PAPER\6_GCOM\logs\train\runs\2025-09-14_22-12-08
+                startedAt: "2025-09-14T14:12:19.241779Z"
+                writerId: clmtostw4h2m1fhdqf4hhduzrnc0sh56
+        m:
+            - "1": trainer/global_step
+              "6":
+                - 3
+              "7": []
+            - "2": '*'
+              "5": 1
+              "6":
+                - 1
+              "7": []
+        python_version: 3.8.20
+        t:
+            "1":
+                - 1
+                - 9
+                - 41
+                - 50
+                - 77
+            "2":
+                - 1
+                - 9
+                - 41
+                - 50
+                - 77
+            "3":
+                - 2
+                - 7
+                - 15
+                - 66
+            "4": 3.8.20
+            "5": 0.21.0
+            "8":
+                - 3
+            "12": 0.21.0
+            "13": windows-amd64
+callbacks/early_stopping/_target_:
+    value: pytorch_lightning.callbacks.EarlyStopping
+callbacks/early_stopping/check_finite:
+    value: true
+callbacks/early_stopping/check_on_train_epoch_end:
+    value: None
+callbacks/early_stopping/divergence_threshold:
+    value: None
+callbacks/early_stopping/min_delta:
+    value: 0
+callbacks/early_stopping/mode:
+    value: min
+callbacks/early_stopping/monitor:
+    value: val/mean_error
+callbacks/early_stopping/patience:
+    value: 20
+callbacks/early_stopping/stopping_threshold:
+    value: None
+callbacks/early_stopping/strict:
+    value: true
+callbacks/early_stopping/verbose:
+    value: false
+callbacks/model_checkpoint/_target_:
+    value: pytorch_lightning.callbacks.ModelCheckpoint
+callbacks/model_checkpoint/auto_insert_metric_name:
+    value: false
+callbacks/model_checkpoint/dirpath:
+    value: C:\Users\Administrator\Desktop\1PAPER\6_GCOM\logs\train\runs\2025-09-14_22-12-08/checkpoints
+callbacks/model_checkpoint/every_n_epochs:
+    value: None
+callbacks/model_checkpoint/every_n_train_steps:
+    value: None
+callbacks/model_checkpoint/filename:
+    value: epoch_{epoch:03d}
+callbacks/model_checkpoint/mode:
+    value: min
+callbacks/model_checkpoint/monitor:
+    value: val/mean_error
+callbacks/model_checkpoint/save_last:
+    value: true
+callbacks/model_checkpoint/save_on_train_epoch_end:
+    value: None
+callbacks/model_checkpoint/save_top_k:
+    value: 1
+callbacks/model_checkpoint/save_weights_only:
+    value: false
+callbacks/model_checkpoint/train_time_interval:
+    value: None
+callbacks/model_checkpoint/verbose:
+    value: false
+callbacks/model_summary/_target_:
+    value: pytorch_lightning.callbacks.RichModelSummary
+callbacks/model_summary/max_depth:
+    value: -1
+ckpt_path:
+    value: None
+datamodule/_target_:
+    value: src.datamodules.SLE_datamodule_cos_knn_graph.SLEGraphDataModule
+datamodule/batch_size:
+    value: 128
+datamodule/loader:
+    value: full
+datamodule/num_neighbors:
+    value:
+        - -1
+        - -1
+datamodule/num_workers:
+    value: 0
+datamodule/root_dir:
+    value: C:\Users\Administrator\Desktop\1PAPER\6_GCOM/data//SLE
+datamodule/top_k:
+    value: 23
+extras/enforce_tags:
+    value: true
+extras/ignore_warnings:
+    value: false
+extras/print_config:
+    value: true
+model/_target_:
+    value: src.models.gconvloc_localize_module_sle.LocalizationModule
+model/activation:
+    value: relu
+model/add_self_loops:
+    value: true
+model/conv_dropout:
+    value: 0
+model/criterion/_target_:
+    value: torch.nn.MSELoss
+model/edge_dropout:
+    value: 0
+model/fill_value:
+    value: max
+model/heads:
+    value: 1
+model/hidden_channels:
+    value:
+        - 256
+        - 128
+model/log_dir:
+    value: C:\Users\Administrator\Desktop\1PAPER\6_GCOM\logs\train\runs\2025-09-14_22-12-08
+model/node_dropout:
+    value: 0
+model/normalize:
+    value: true
+model/optimizer/_partial_:
+    value: true
+model/optimizer/_target_:
+    value: src.utils.build_optimizer
+model/optimizer/epochs:
+    value: 5000
+model/optimizer/lr:
+    value: 0.001
+model/optimizer/opt:
+    value: adam
+model/optimizer/opt_decay_rate:
+    value: 0.9
+model/optimizer/opt_decay_step:
+    value: 1000
+model/optimizer/opt_scheduler:
+    value: none
+model/optimizer/weight_decay:
+    value: 0
+model/output_activation:
+    value: none
+model/post_activation:
+    value: relu
+model/post_dropout:
+    value: 0
+model/post_input_dropout:
+    value: 0
+model/post_mlp_hiddens:
+    value:
+        - 64
+model/share_weights:
+    value: true
+model/use_post_mlp:
+    value: true
+seed:
+    value: 42
+tags:
+    value:
+        - SLE
+        - gat
+task_name:
+    value: train
+trainer/_target_:
+    value: pytorch_lightning.Trainer
+trainer/accelerator:
+    value: auto
+trainer/default_root_dir:
+    value: C:\Users\Administrator\Desktop\1PAPER\6_GCOM\logs\train\runs\2025-09-14_22-12-08
+trainer/deterministic:
+    value: false
+trainer/devices:
+    value: auto
+trainer/enable_progress_bar:
+    value: false
+trainer/max_epochs:
+    value: 20000
+trainer/min_epochs:
+    value: 1
+trainer/num_sanity_val_steps:
+    value: 0
