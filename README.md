@@ -30,6 +30,13 @@ cd ~/catkin_ws/src/scout_base/scout_bringup/launch
 roslaunch scount_minimal.launch
 sudo chmod 666/dev/ttyUSB1
 ```
+The demo of the robot executing the automated data collection script is shown below:
+
+https://github.com/user-attachments/assets/d6b9aed4-cb74-439d-a32e-01367da2fd2e
+
+
+
+
 # Environment
 Three experimental scenarios were selected: two indoor environments (classroom and parking lot) and one outdoor environment (helipad). All experiments were conducted at the National Elite Institute of Engineering, Chongqing University.
 <!-- <h3 align="center">Classroom scenario</h3>
