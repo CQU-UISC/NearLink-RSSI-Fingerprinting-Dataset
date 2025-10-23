@@ -18,7 +18,7 @@ In the experiment, the equipment used includes BearPi Pico H3863 for reading RSS
 <h3 align="center">The hardware of BearPi Pico H3863 and autonomous robot</h3>
 
 The autonomous robot integrates multiple sensors and computing modules, including a [BearPi-Pico H3863 development board](https://github.com/Hny0305Lin/Bearpi_Hi3863_Pico?tab=readme-ov-file), a RoboSense RS-Helios-16P LiDAR, an Intel RealSense D435 RGB-D camera, a HiPNUC CH110 6-axis IMU, and wheel odometry. The chassis is built on an AgileX Scout Mini, and the onboard computer is an NVIDIA Jetson AGX Xavier with 32 GB RAM. The BearPi-Pico H3863 development board incorporates the [HiSilicon Hi3863V100 chipset](https://www.hisilicon.com/en/products/connectivity/short-range-iot/wifi-nearlink-ble/hi3863v100), which supports tri-mode communication (NearLink, BLE, and Wi-Fi) and is compatible with SLE 1.0, BLE 5.2, and Wi-Fi 6 protocols.
-# Scripts
+# Data Collection Scripts
 You need install ros packages on AgileX scout mini, Generally speschematic diagramaking, the package is already installed if you buy the product. If not, the package can be found at: https://github.com/agilexrobotics/scout_ros 
 Before running the script, you need to execute the following instructions on the terminal:
 ```
@@ -32,7 +32,8 @@ sudo chmod 666/dev/ttyUSB1
 ```
 The demo of the robot executing the automated data collection script is shown below:
 
-https://github.com/user-attachments/assets/d6b9aed4-cb74-439d-a32e-01367da2fd2e
+https://github.com/user-attachments/assets/9a1f82e3-a05c-4efb-8d26-6d3e1ed59ab3
+
 
 
 
