@@ -1,11 +1,11 @@
 
-# NearLink RSSI Fingerprinting Dataset
+# NearLink_BLE_Wi-Fi RSSI Fingerprinting Dataset
 This RSSI Dataset is a comprehensive set of Received Signal Strength Indicator (RSSI) readings gathered from three different types of scenarios. Three wireless technologies were used which consisted of:
 - Wi-Fi (IEEE 802.11. AX 2.4GHz band),
 - Bluetooth Low Energy (BLE 5.2),
 - NearLink (SLE 1.0).
 
-In addition, we also combBefore running the script, you need to execute the following instructions:ined datasets collected using three wireless technologies, including:
+In addition, we also combined datasets collected using three wireless technologies, including:
 
 - Wi-Fi+BLE, 
 - Wi-Fi+NearLink, 
