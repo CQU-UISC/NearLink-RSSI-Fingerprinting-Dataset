@@ -44,7 +44,15 @@ python test_read.py
 ```
 Data collection demo is shown below:
 
-https://github.com/user-attachments/assets/9a9e41a4-27de-4f59-8949-d1d05ff791bc
+
+
+https://github.com/user-attachments/assets/8e31749e-b67b-4ef4-8d47-6cf521f60996
+
+
+
+
+
+
 
 
 
