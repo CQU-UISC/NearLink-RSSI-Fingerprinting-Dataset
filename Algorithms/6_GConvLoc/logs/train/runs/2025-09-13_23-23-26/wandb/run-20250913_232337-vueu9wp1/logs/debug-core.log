@@ -1,8 +1,0 @@
-{"time":"2025-09-13T23:23:37.2707931+08:00","level":"INFO","msg":"main: starting server","port-filename":"C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\tmp7a6_dx6v\\port-14528.txt","pid":14528,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
-{"time":"2025-09-13T23:23:37.2782525+08:00","level":"INFO","msg":"server: will exit if parent process dies","ppid":14528}
-{"time":"2025-09-13T23:23:37.2782525+08:00","level":"INFO","msg":"server: accepting connections","addr":{"Name":"C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\wandb-14528-17012-4091147607\\socket","Net":"unix"}}
-{"time":"2025-09-13T23:23:37.2782525+08:00","level":"INFO","msg":"server: accepting connections","addr":{"IP":"127.0.0.1","Port":51269,"Zone":""}}
-{"time":"2025-09-13T23:23:37.454529+08:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"1(127.0.0.1:51270)"}
-{"time":"2025-09-13T23:23:37.469068+08:00","level":"INFO","msg":"handleInformInit: received","streamId":"vueu9wp1","id":"1(127.0.0.1:51270)"}
-{"time":"2025-09-13T23:23:50.4915101+08:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"vueu9wp1","id":"1(127.0.0.1:51270)"}
-{"time":"2025-09-13T23:24:10.890736+08:00","level":"ERROR","msg":"connection: fatal error reading connection","error":"read tcp 127.0.0.1:51269->127.0.0.1:51270: wsarecv: An existing connection was forcibly closed by the remote host.","id":"1(127.0.0.1:51270)"}

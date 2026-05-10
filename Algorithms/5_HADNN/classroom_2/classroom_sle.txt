@@ -1,9 +1,0 @@
-#############################################################
-HADNN1 results on CustomIndoor
-mse on the test set: 0.9690
-mse2 on the test set: 1.1755
-rmse on the test set: 1.0842
-mae on the test set: 1.2363
-variance on the test set: 0.2365
-std on the test set: 0.4863
-#############################################################

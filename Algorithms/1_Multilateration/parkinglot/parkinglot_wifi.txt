@@ -1,7 +1,0 @@
-MLT Error Metrics:
-Average Euclidean Distance Error (meters): 8.1157
-MSE (meters²): 104.5419
-RMSE (meters): 10.2246
-Variance (meters²): 38.6770
-STD (meters): 6.2191
-Algorithm Runtime (seconds): 0.0920

@@ -1,8 +1,0 @@
-_target_: src.datamodules.SLE_datamodule_cos_knn_graph.SLEGraphDataModule
-
-root_dir: ${paths.data_dir}/SLE
-top_k: 30
-loader: "full"
-batch_size: 128
-num_workers: 0
-num_neighbors: null
