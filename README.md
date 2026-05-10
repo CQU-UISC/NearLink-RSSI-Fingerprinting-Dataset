@@ -47,6 +47,8 @@ Data collection demo is shown below:
 https://github.com/user-attachments/assets/9a1f82e3-a05c-4efb-8d26-6d3e1ed59ab3
 
 
+
+
 # Method
 In this work, we adopted the open-source [H-IPS](https://github.com/6trem/H-IPS) algorithm for range based Multilateration. For the fingerprinting method, we adopted one machine learning algorithm ([KNN](https://github.com/SensorOrgNet/A_Soft_Range_Limited_K_Nearest_Neighbors_Algorithm_for_Indoor_Localization_Enhancement)) and four deep learning algorithms (MLP, [LSTM-RNN](https://github.com/SensorOrgNet/Recurrent_Neural_Networks_for_Accurate_RSSI_Indoor_Localization), [HADNN](https://codeocean.com/capsule/6488957/tree/v1) and [GconvLoc](https://github.com/dongdokee/GConvLoc). The code for all methods can be found in the algorithms folder.
 
