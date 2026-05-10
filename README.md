@@ -100,7 +100,7 @@ Three experimental scenarios were selected: two indoor environments (classroom a
 <h3 align="center">Schematic diagram and real scenario in 3 scenarios</h3>
 
 # Related Paper
-S. Xie, X. Long, F. Guo, Y. Guo and F. Gu, "Comparison of RSSI-Based Indoor/Outdoor Localization Using NearLink Technology," Satellite Navigation. To be published.
+S. Xie, X. Long, F. Guo, Y. Guo and F. Gu, "Comparison of RSSI-Based Indoor/Outdoor Localization Using NearLink Technology," IEEE Sensors Journal. Under Review.
 
 
 # Acknowledgments
