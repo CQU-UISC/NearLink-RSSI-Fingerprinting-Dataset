@@ -1,0 +1,12 @@
+{
+    "python.pythonPath": "C:\\ProgramData\\anaconda3\\envs\\tensorflow\\python.exe",
+    "Codegeex.RepoIndex": true,
+    "python.autoComplete.extraPaths": [
+        "/home/xiesong/catkin_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/xiesong/catkin_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ]
+}

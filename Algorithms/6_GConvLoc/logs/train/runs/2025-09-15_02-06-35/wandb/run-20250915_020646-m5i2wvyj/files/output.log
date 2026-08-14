@@ -1,0 +1,94 @@
+[[36m2025-09-15 02:06:48,643[0m][[34m__main__[0m][[32mINFO[0m] - Instantiating trainer <pytorch_lightning.Trainer>[0m
+Trainer already configured with model summary callbacks: [<class 'pytorch_lightning.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+[[36m2025-09-15 02:06:48,655[0m][[34m__main__[0m][[32mINFO[0m] - Logging hyperparameters![0m
+C:\Users\Administrator\Desktop\1PAPER\6_GCOM\src\utils\utils.py:145: LightningDeprecationWarning: Using `trainer.logger` when multiple loggers are configured. This behavior will change in v1.8 when `LoggerCollection` is removed, and `trainer.logger` will return the first logger available.
+  if not trainer.logger:
+C:\Users\Administrator\Desktop\1PAPER\6_GCOM\src\utils\utils.py:163: LightningDeprecationWarning: Using `trainer.logger` when multiple loggers are configured. This behavior will change in v1.8 when `LoggerCollection` is removed, and `trainer.logger` will return the first logger available.
+  trainer.logger.log_hyperparams(hparams)
+[[36m2025-09-15 02:06:48,672[0m][[34m__main__[0m][[32mINFO[0m] - Starting training![0m
+┏━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━┳━━━━━━━━┓
+┃[1;35m [0m[1;35m  [0m[1;35m [0m┃[1;35m [0m[1;35mName                   [0m[1;35m [0m┃[1;35m [0m[1;35mType          [0m[1;35m [0m┃[1;35m [0m[1;35mParams[0m[1;35m [0m┃
+┡━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━╇━━━━━━━━┩
+│[2m [0m[2m0 [0m[2m [0m│ gat                     │ GAT            │ 45.1 K │
+│[2m [0m[2m1 [0m[2m [0m│ gat.convs               │ ModuleList     │ 36.0 K │
+│[2m [0m[2m2 [0m[2m [0m│ gat.convs.0             │ GATv2Conv      │  2.8 K │
+│[2m [0m[2m3 [0m[2m [0m│ gat.convs.0.aggr_module │ SumAggregation │      0 │
+│[2m [0m[2m4 [0m[2m [0m│ gat.convs.0.lin_l       │ Linear         │  2.3 K │
+│[2m [0m[2m5 [0m[2m [0m│ gat.convs.1             │ GATv2Conv      │ 33.2 K │
+│[2m [0m[2m6 [0m[2m [0m│ gat.convs.1.aggr_module │ SumAggregation │      0 │
+│[2m [0m[2m7 [0m[2m [0m│ gat.convs.1.lin_l       │ Linear         │ 32.9 K │
+│[2m [0m[2m8 [0m[2m [0m│ gat.conv_posts          │ ModuleList     │    768 │
+│[2m [0m[2m9 [0m[2m [0m│ gat.conv_posts.0        │ Sequential     │    512 │
+│[2m [0m[2m10[0m[2m [0m│ gat.conv_posts.0.0      │ LayerNorm      │    512 │
+│[2m [0m[2m11[0m[2m [0m│ gat.conv_posts.0.1      │ ReLU           │      0 │
+│[2m [0m[2m12[0m[2m [0m│ gat.conv_posts.0.2      │ Dropout        │      0 │
+│[2m [0m[2m13[0m[2m [0m│ gat.conv_posts.1        │ Sequential     │    256 │
+│[2m [0m[2m14[0m[2m [0m│ gat.conv_posts.1.0      │ LayerNorm      │    256 │
+│[2m [0m[2m15[0m[2m [0m│ gat.conv_posts.1.1      │ ReLU           │      0 │
+│[2m [0m[2m16[0m[2m [0m│ gat.conv_posts.1.2      │ Dropout        │      0 │
+│[2m [0m[2m17[0m[2m [0m│ gat.post_mlp            │ MLPNet         │  8.4 K │
+│[2m [0m[2m18[0m[2m [0m│ gat.post_mlp.layers     │ ModuleList     │  8.4 K │
+│[2m [0m[2m19[0m[2m [0m│ gat.post_mlp.layers.0   │ Sequential     │  8.3 K │
+│[2m [0m[2m20[0m[2m [0m│ gat.post_mlp.layers.0.0 │ Linear         │  8.3 K │
+│[2m [0m[2m21[0m[2m [0m│ gat.post_mlp.layers.0.1 │ ReLU           │      0 │
+│[2m [0m[2m22[0m[2m [0m│ gat.post_mlp.layers.0.2 │ Dropout        │      0 │
+│[2m [0m[2m23[0m[2m [0m│ gat.post_mlp.layers.1   │ Sequential     │    130 │
+│[2m [0m[2m24[0m[2m [0m│ gat.post_mlp.layers.1.0 │ Linear         │    130 │
+│[2m [0m[2m25[0m[2m [0m│ gat.post_mlp.layers.1.1 │ Identity       │      0 │
+│[2m [0m[2m26[0m[2m [0m│ criterion               │ MSELoss        │      0 │
+│[2m [0m[2m27[0m[2m [0m│ train_loss              │ MeanMetric     │      0 │
+│[2m [0m[2m28[0m[2m [0m│ val_loss                │ MeanMetric     │      0 │
+│[2m [0m[2m29[0m[2m [0m│ test_loss               │ MeanMetric     │      0 │
+│[2m [0m[2m30[0m[2m [0m│ train_error             │ MeanMetric     │      0 │
+│[2m [0m[2m31[0m[2m [0m│ val_error               │ MeanMetric     │      0 │
+│[2m [0m[2m32[0m[2m [0m│ test_error              │ MeanMetric     │      0 │
+│[2m [0m[2m33[0m[2m [0m│ train_mse               │ MeanMetric     │      0 │
+│[2m [0m[2m34[0m[2m [0m│ val_mse                 │ MeanMetric     │      0 │
+│[2m [0m[2m35[0m[2m [0m│ test_mse                │ MeanMetric     │      0 │
+│[2m [0m[2m36[0m[2m [0m│ train_rmse              │ MeanMetric     │      0 │
+│[2m [0m[2m37[0m[2m [0m│ val_rmse                │ MeanMetric     │      0 │
+│[2m [0m[2m38[0m[2m [0m│ test_rmse               │ MeanMetric     │      0 │
+│[2m [0m[2m39[0m[2m [0m│ train_variance          │ MeanMetric     │      0 │
+│[2m [0m[2m40[0m[2m [0m│ val_variance            │ MeanMetric     │      0 │
+│[2m [0m[2m41[0m[2m [0m│ test_variance           │ MeanMetric     │      0 │
+│[2m [0m[2m42[0m[2m [0m│ train_std               │ MeanMetric     │      0 │
+│[2m [0m[2m43[0m[2m [0m│ val_std                 │ MeanMetric     │      0 │
+│[2m [0m[2m44[0m[2m [0m│ test_std                │ MeanMetric     │      0 │
+│[2m [0m[2m45[0m[2m [0m│ val_error_best          │ MinMetric      │      0 │
+└────┴─────────────────────────┴────────────────┴────────┘
+[1mTrainable params[0m: 45.1 K
+[1mNon-trainable params[0m: 0
+[1mTotal params[0m: 45.1 K
+[1mTotal estimated model params size (MB)[0m: 0
+C:\ProgramData\anaconda3\envs\gconvloc\lib\site-packages\pytorch_lightning\trainer\trainer.py:1892: PossibleUserWarning: The number of training batches (1) is smaller than the logging interval Trainer(log_every_n_steps=50). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+  rank_zero_warn(
+C:\ProgramData\anaconda3\envs\gconvloc\lib\site-packages\pytorch_lightning\trainer\connectors\data_connector.py:489: PossibleUserWarning: Your `val_dataloader`'s sampler has shuffling enabled, it is strongly recommended that you turn shuffling off for val/test/predict dataloaders.
+  rank_zero_warn(
+C:\ProgramData\anaconda3\envs\gconvloc\lib\site-packages\torch_geometric\deprecation.py:12: UserWarning: 'dropout_adj' is deprecated, use 'dropout_edge' instead
+  warnings.warn(out)
+[[36m2025-09-15 02:06:53,876[0m][[34m__main__[0m][[32mINFO[0m] - Total training time: 5.20 seconds[0m
+[[36m2025-09-15 02:06:53,877[0m][[34m__main__[0m][[32mINFO[0m] - Starting testing![0m
+Restoring states from the checkpoint path at C:\Users\Administrator\Desktop\1PAPER\6_GCOM\logs\train\runs\2025-09-15_02-06-35/checkpoints\epoch_030.ckpt
+Loaded model weights from checkpoint at C:\Users\Administrator\Desktop\1PAPER\6_GCOM\logs\train\runs\2025-09-15_02-06-35/checkpoints\epoch_030.ckpt
+C:\ProgramData\anaconda3\envs\gconvloc\lib\site-packages\pytorch_lightning\trainer\connectors\data_connector.py:489: PossibleUserWarning: Your `test_dataloader`'s sampler has shuffling enabled, it is strongly recommended that you turn shuffling off for val/test/predict dataloaders.
+  rank_zero_warn(
+C:\ProgramData\anaconda3\envs\gconvloc\lib\site-packages\torch_geometric\deprecation.py:12: UserWarning: 'dropout_adj' is deprecated, use 'dropout_edge' instead
+  warnings.warn(out)
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃[1m [0m[1m       Test metric       [0m[1m [0m┃[1m [0m[1m      DataLoader 0       [0m[1m [0m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│[36m [0m[36m        test/loss        [0m[36m [0m│[35m [0m[35m   21.955097198486328    [0m[35m [0m│
+│[36m [0m[36m     test/mean_error     [0m[36m [0m│[35m [0m[35m    6.207826614379883    [0m[35m [0m│
+│[36m [0m[36m      test/mean_mse      [0m[36m [0m│[35m [0m[35m   43.910194396972656    [0m[35m [0m│
+│[36m [0m[36m     test/mean_rmse      [0m[36m [0m│[35m [0m[35m    6.626476764678955    [0m[35m [0m│
+│[36m [0m[36m      test/mean_std      [0m[36m [0m│[35m [0m[35m   2.3179922103881836    [0m[35m [0m│
+│[36m [0m[36m   test/mean_variance    [0m[36m [0m│[35m [0m[35m    5.373087406158447    [0m[35m [0m│
+└───────────────────────────┴───────────────────────────┘
+[[36m2025-09-15 02:06:54,265[0m][[34m__main__[0m][[32mINFO[0m] - Total testing time: 0.39 seconds[0m
+[[36m2025-09-15 02:06:54,266[0m][[34m__main__[0m][[32mINFO[0m] - Best ckpt path: C:\Users\Administrator\Desktop\1PAPER\6_GCOM\logs\train\runs\2025-09-15_02-06-35/checkpoints\epoch_030.ckpt[0m
+[[36m2025-09-15 02:06:54,268[0m][[34msrc.utils.utils[0m][[32mINFO[0m] - Closing loggers...[0m
+[[36m2025-09-15 02:06:54,268[0m][[34msrc.utils.utils[0m][[32mINFO[0m] - Closing wandb![0m

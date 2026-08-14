@@ -1,0 +1,22 @@
+_target_: src.models.cnnloc_localize_module.LocalizationModule
+
+sae_encoder_ckpt_path: null
+conv_filters_kernel_sizes: [[99, 22], [66, 22], [33, 22]]
+mlp_hiddens: []
+hidden_activation: "relu"
+output_activation: "none"
+log_dir: ${paths.output_dir}
+
+criterion:
+  _target_: torch.nn.MSELoss
+
+optimizer:
+      _target_: src.utils.build_optimizer
+      _partial_: True
+      weight_decay: 0.0
+      lr: 0.001
+      opt: "adam"
+      opt_scheduler: "none"
+      opt_decay_step: 1000
+      opt_decay_rate: 0.9
+      epochs: 20000

@@ -1,0 +1,57 @@
+# @package _global_
+
+defaults:
+  - override /datamodule: UJIIndoorLoc_cos_knn_graph.yaml
+  - override /model: gconvloc_localize_model.yaml
+
+tags: ["UJIIndoorLoc", "gat"]
+
+seed: 0
+
+trainer:
+  min_epochs: 1
+  max_epochs: 20000
+
+datamodule:
+  top_k: 23
+  loader: "full"
+  batch_size: 128
+  num_neighbors: [-1, -1]  # number of hidden channels + 1 in gat model // number of hidden channels in gat+mlp
+
+model:
+  hidden_channels: [256, 128]
+  activation: "relu"
+  heads: 1
+  conv_dropout: 0.0
+  node_dropout: 0.0
+  edge_dropout: 0.0
+  share_weights: True
+  output_activation: "none"
+  normalize: True
+  post_mlp_hiddens: [64]
+  post_input_dropout: 0.0
+  post_dropout: 0.0
+  log_dir: ${paths.output_dir}
+  optimizer:
+    lr: 0.001
+    opt: "adam"
+    opt_scheduler: "none"
+    epochs: 5000
+  criterion:
+    _target_: torch.nn.MSELoss
+    #_target_: torch.nn.L1Loss
+
+callbacks:
+  early_stopping:
+    patience: 20
+    monitor: val/mean_error
+  model_checkpoint:
+    monitor: val/mean_error
+    #save_last: True
+    #every_n_epochs: 100
+
+logger:
+  wandb:
+    tags: ${tags}
+    group: "gat"
+    project: "GConvLoc"

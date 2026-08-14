@@ -1,0 +1,6 @@
+_target_: src.datamodules.UJIIndoorLoc_datamodule_matrix.UJIIndoorLocMatrixDataModule
+
+root_dir: ${paths.data_dir}/UJIIndoorLoc
+batch_size: 128
+num_workers: 0
+pin_memory: True

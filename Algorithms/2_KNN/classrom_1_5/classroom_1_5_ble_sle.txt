@@ -1,0 +1,6 @@
+Average Error (Mean Euclidean Distance): 1.0863 meters
+Variance of Error: 0.3079 meters^2
+Standard Deviation of Error: 0.5549 meters
+Mean Squared Error (MSE): 1.4878 meters^2
+Root Mean Squared Error (RMSE): 1.2198 meters
+Algorithm Run Time: 0.0028 seconds

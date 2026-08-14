@@ -1,0 +1,6 @@
+Algorithm runtime: 31.77 seconds
+Average Euclidean Distance Localization Error: 3.2708 meters
+Root Mean Square Error (RMSE): 3.8182 meters
+Variance: 3.8807 meters^2
+Standard Deviation (STD): 1.9699 meters
+Localization errors saved to 'test_point_localization_errors.csv'

@@ -1,0 +1,13 @@
+{"time":"2025-09-14T22:39:57.8433902+08:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-09-14T22:39:58.7294149+08:00","level":"INFO","msg":"stream: created new stream","id":"744jr644"}
+{"time":"2025-09-14T22:39:58.7299373+08:00","level":"INFO","msg":"stream: started","id":"744jr644"}
+{"time":"2025-09-14T22:39:58.7299373+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"744jr644"}
+{"time":"2025-09-14T22:39:58.7299373+08:00","level":"INFO","msg":"sender: started","stream_id":"744jr644"}
+{"time":"2025-09-14T22:39:58.7299373+08:00","level":"INFO","msg":"handler: started","stream_id":"744jr644"}
+{"time":"2025-09-14T22:40:15.0362597+08:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.6263718,"progress":"9.9KB/9.9KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.6263718,"progress":"803B/803B"},{"desc":"uploading config.yaml","runtime_seconds":0.2873872,"progress":"6.0KB/6.0KB"},{"desc":"uploading history steps 0-374, summary, console lines 0-93","runtime_seconds":0.0679504}],"total_operations":4}}
+{"time":"2025-09-14T22:40:15.5309654+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-14T22:40:17.1413353+08:00","level":"INFO","msg":"stream: closing","id":"744jr644"}
+{"time":"2025-09-14T22:40:17.1413353+08:00","level":"INFO","msg":"handler: closed","stream_id":"744jr644"}
+{"time":"2025-09-14T22:40:17.1413353+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"744jr644"}
+{"time":"2025-09-14T22:40:17.1413353+08:00","level":"INFO","msg":"sender: closed","stream_id":"744jr644"}
+{"time":"2025-09-14T22:40:17.1413353+08:00","level":"INFO","msg":"stream: closed","id":"744jr644"}
