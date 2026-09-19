@@ -120,12 +120,12 @@ Please cite:
 @ARTICLE{11606303,
   author={Xie, Song and Guo, Yixue and Guo, Fangming and Long, Xianlei and Zhou, Jianguo and Li, Yan and Li, Leilei and Gu, Fuqiang},
   journal={IEEE Sensors Journal}, 
-  title={Unveiling NearLink’s Localization Potential: First Public RSSI Dataset and Cross-Environment Evaluation with Wi-Fi and BLE}, 
+  title={Unveiling NearLink’s Localization Potential: First Public RSSI Dataset and Cross-Environment Evaluation With Wi-Fi and BLE}, 
   year={2026},
-  volume={},
-  number={},
-  pages={1-1},
-  keywords={Location awareness;Wireless fidelity;Received signal strength indicator;Technology;Distance measurement;Interference;Educational institutions;Modeling;Fingerprint recognition;Measurement;NearLink;Bluetooth Low Energy;Wi-Fi;indoor localization;multilateration;fingerprinting;deep learning},
+  volume={26},
+  number={17},
+  pages={26863-26875},
+  keywords={Location awareness;Wireless fidelity;Received signal strength indicator;Technology;Distance measurement;Interference;Educational institutions;Modeling;Fingerprint recognition;Measurement;Bluetooth low energy (BLE);deep learning;fingerprinting;indoor localization;multilateration;NearLink;Wi-Fi},
   doi={10.1109/JSEN.2026.3710363}}
 ```
 
